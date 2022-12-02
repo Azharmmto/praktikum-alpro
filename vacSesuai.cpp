@@ -16,7 +16,7 @@ int main()
 
   // deklarasi variabel
   short thnLahir, umur;
-  short thnIni = 2021;
+  short thnIni = 2022;
 
   // user memasukkan tahun lahir
   cout << "\nMasukkan tahun lahir : ";
