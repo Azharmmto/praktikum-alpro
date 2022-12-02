@@ -69,4 +69,8 @@ int main()
     cout << "Umur Anda : " << umur << " tahun" << endl;
     cout << "\t\nTidak adan vaksin yang cocok\n";
   }
+  
+  retrun 0;
+  cin.get();
+  cin.get();
 }
