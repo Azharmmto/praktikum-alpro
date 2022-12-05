@@ -16,21 +16,21 @@ int main()
 
   cout << "\nNilai tinggi badan harus berupa angka desimal agar \ntidak terjadi kesalahan dalam perhitungan.\n \nMisalnya tinggi Anda 171cm maka nilai \ndesimalnya adalah 1.71 " << endl;
 
-  cin.get();     // user menekan enter
-  system("cls"); // membersihkan layar setelah user menekan enter
+  cin.get();     // tekan enter
+  system("cls"); // membersihkan layar setelah menekan enter
 
-  // User meng-input height
+  // input height
   cout << "\nMasukkan tinggi badan (cm)  : ";
   cin >> tinggi;
 
-  // User meng-input berat
+  //input berat
   cout << "Masukkan berat badan (kg)   : ";
   cin >> berat;
 
-  // assigmnet variabel hasil
+  // assigmnet var hasil
   hasil = berat / (tinggi * tinggi);
 
-  // membandingan BMI user
+  // Menentukkan BMI 
   if (hasil <= 18.5 && hasil >= 5)
   {
     cout << "\nHasil : \n";
