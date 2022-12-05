@@ -18,11 +18,11 @@ int main()
   short thnLahir, umur;
   short thnIni = 2022;
 
-  // user memasukkan tahun lahir
+  // Input tahun lahir
   cout << "\nMasukkan tahun lahir : ";
   cin >> thnLahir;
 
-  // menentukan umur user dan assigmnet variabel umur
+  // menentukkan umur 
   umur = thnIni - thnLahir;
 
   if (umur >= 12 && umur <= 18)
