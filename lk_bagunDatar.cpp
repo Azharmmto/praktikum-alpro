@@ -9,23 +9,31 @@ int main()
   cout << "=====================================\n"
        << endl;
 
-  // deklarasi variabel
-  int pilihan, pilihanDua, sisiPersegi, le_persegi, k_persegi, lk_persegi, pj_persegi, lu_persegiPanjang, k_persegiPanjang;
+  // deklarasi var
+  int pilihan, 
+      pilihanDua, 
+      sisiPersegi, 
+      le_persegi, 
+      k_persegi, 
+      lk_persegi, 
+      pj_persegi, 
+      lu_persegiPanjang, 
+      k_persegiPanjang;
 
-  // deklarasi variable lingkaran
+  // var lingkaran
   const double phi = 3.14;
   double r, lu_lingkaran, k_lingkaran;
 
-  // usur memilih pilihan yang ingin di hitung
+  // memilih pilihan yang ingin di hitung
   cout << "1. Persegi\n";
   cout << "2. Persegi Panjang\n";
   cout << "3. Lingkaran\n";
   cout << "Masukkan Pilihan [1..3] : ";
   cin >> pilihan;
 
-  system("cls"); // membersihkan layar setelah user memilih
+  system("cls"); // membersihkan layar
 
-  // mendeteksi pilihan user
+  // mendeteksi pilihan 
   switch (pilihan)
   {
   case 1: // persegi
@@ -34,14 +42,14 @@ int main()
     cout << "Masukkan ukuran sisi : ";
     cin >> sisiPersegi;
 
-    // user memilih apa yang ingin di kerjakan
+    // Pilihan yang ingin di kerjakan
     cout << "\n1. Hitung Luas\n";
     cout << "2. Hitung Keliling\n";
     cout << "3. Hitung Luas dan Keliling\n";
     cout << "Masukkan Pilihan [1..3] : ";
     cin >> pilihanDua;
 
-    // menghitung pilihan user
+    // menghitung pilihan 
     switch (pilihanDua)
     {
     case 1:
@@ -71,13 +79,13 @@ int main()
   case 2: // Persegi panjang
     cout << "\nBangun Datar Persegi Panjang" << endl;
 
-    // user memasukan panjang dan lebar
+    // Input panjang dan lebar
     cout << "\nMasukkan Ukuran Panjang : ";
     cin >> pj_persegi;
     cout << "Msukkan Ukuran Lebar : ";
     cin >> le_persegi;
 
-    // user memilih apa yang ingin di kerjakan
+    // Pilihan yang ingin di kerjakan
     cout << "\n1. Hitung Luas\n";
     cout << "2. Hitung Keliling\n";
     cout << "3. Hitung Luas dan Keliling\n";
@@ -113,11 +121,11 @@ int main()
   case 3: // Lingkaran
     cout << "\nBangun Datar Lingkaran" << endl;
 
-    // user memasukan jari-jari
+    // Input jari-jari
     cout << "\nMasukkan ukuran jari-jari : ";
     cin >> r;
 
-    // user memilih apa yang ingin di kerjakan
+    // Pilihan yang ingin di kerjakan
     cout << "\n1. Hitung Luas\n";
     cout << "2. Hitung Keliling\n";
     cout << "3. Hitung Luas dan Keliling\n";
