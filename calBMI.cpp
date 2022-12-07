@@ -14,8 +14,6 @@ int main()
   // deklarasi variabel
   float tinggi, berat, hasil;
 
-  cout << "\nNilai tinggi badan harus berupa angka desimal agar \ntidak terjadi kesalahan dalam perhitungan.\n \nMisalnya tinggi Anda 171cm maka nilai \ndesimalnya adalah 1.71 " << endl;
-
   cin.get();     // tekan enter
   system("cls"); // membersihkan layar setelah menekan enter
 
@@ -28,28 +26,28 @@ int main()
   cin >> berat;
 
   // assigmnet var hasil
-  hasil = berat / (tinggi * tinggi);
+  hasil = (berat / (tinggi * tinggi)) * 10000;
 
   // Menentukkan BMI 
-  if (hasil <= 18.5 && hasil >= 5)
+  if (hasil <= 18.5)
   {
     cout << "\nHasil : \n";
     cout << "BMI       = " << hasil << "\n";
     cout << "Kategori  = Berat badan kurang" << endl;
   }
-  else if (hasil <= 22.9 && hasil >= 5)
+  else if (hasil > 18.5 && hasil <= 22.9 )
   {
     cout << "\nHasil : \n";
     cout << "BMI       = " << hasil << "\n";
     cout << "Kategori  = Berat badan normal" << endl;
   }
-  else if (hasil <= 29.9 && hasil >= 5)
+  else if (hasil > 22.9 && hasil <= 29.9)
   {
     cout << "\nHasil : \n";
     cout << "BMI       = " << hasil << "\n";
     cout << "Kategori  = Berat badan berlebih" << endl;
   }
-  else if (hasil >= 30 && hasil >= 5)
+  else if (hasil >= 30 &)
   {
     cout << "\nHasil : \n";
     cout << "BMI       = " << hasil << "\n";
